@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Omnifood 切版練習 | 前端三十之二 | shanpig&#39;s tech blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="身為前端一份子不會切版，就像煮飯用篩網過濾一樣誇張。別鬧了好嘛！  切板可以說是學習前端基礎HTML&#x2F;CSS 之後，第一件要做的事。從網頁的外觀，判斷出各個版面應該有的圖層，透過 HTML 規劃階層架構，再利用 CSS 進行樣式渲染，就能做出一個簡單的靜態網頁。 多進行切版的練習，不只會對前端語言更孰悉，也會讓自己對於不同網頁的架構，有更全面的了解，在看到網頁後，腦中立即浮現解決方案，在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Omnifood 切版練習 | 前端三十之二">
+<meta property="og:url" content="http://shanpig.github.io/blog/2022-06-12/front-end-30-omnifood-mockup/index.html">
+<meta property="og:site_name" content="shanpig&#39;s tech blog">
+<meta property="og:description" content="身為前端一份子不會切版，就像煮飯用篩網過濾一樣誇張。別鬧了好嘛！  切板可以說是學習前端基礎HTML&#x2F;CSS 之後，第一件要做的事。從網頁的外觀，判斷出各個版面應該有的圖層，透過 HTML 規劃階層架構，再利用 CSS 進行樣式渲染，就能做出一個簡單的靜態網頁。 多進行切版的練習，不只會對前端語言更孰悉，也會讓自己對於不同網頁的架構，有更全面的了解，在看到網頁後，腦中立即浮現解決方案，在">
+<meta property="og:locale">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/rice-in-collandar.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-1.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-2.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-3.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-4.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-5.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-6.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-7.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-8.webp">
+<meta property="og:image" content="http://shanpig.github.io/blog/images/assets/omnifood-mockup-9.webp">
+<meta property="article:published_time" content="2022-06-12T01:27:55.000Z">
+<meta property="article:modified_time" content="2022-06-12T01:43:25.113Z">
+<meta property="article:author" content="shanpig">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://shanpig.github.io/blog/images/assets/rice-in-collandar.webp">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="shanpig's tech blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/blog/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">shanpig&#39;s tech blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/blog/" id="subtitle">shanpig 的技術部落格</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSSフィード"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="検索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="検索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://shanpig.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-front-end-30-omnifood-mockup" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/blog/2022-06-12/front-end-30-omnifood-mockup/" class="article-date">
+  <time class="dt-published" datetime="2022-06-12T01:27:55.000Z" itemprop="datePublished">2022-06-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Omnifood 切版練習 | 前端三十之二
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>身為前端一份子不會切版，就像煮飯用篩網過濾一樣誇張。別鬧了好嘛！</p>
+<p><img src="/blog/./images/assets/rice-in-collandar.webp"></p>
+<p>切板可以說是學習前端基礎HTML&#x2F;CSS 之後，第一件要做的事。從網頁的外觀，判斷出各個版面應該有的圖層，透過 HTML 規劃階層架構，再利用 CSS 進行樣式渲染，就能做出一個簡單的靜態網頁。</p>
+<p>多進行切版的練習，不只會對前端語言更孰悉，也會讓自己對於不同網頁的架構，有更全面的了解，在看到網頁後，腦中立即浮現解決方案，在未來的網頁開發的效率上，會有積沙成塔的效果！</p>
+<p>因此前端三十第二篇，就一起來切個版吧！</p>
+<hr>
+<h1 id="切版對象：Omnifood"><a href="#切版對象：Omnifood" class="headerlink" title="切版對象：Omnifood"></a>切版對象：<a target="_blank" rel="noopener" href="http://www.omnifoodinc.com/">Omnifood</a></h1><p>選擇模仿對象時，可以選擇靜態網頁，或是網頁動態資訊較少的網頁，比較能夠專注在架構和樣式設計上。我選擇的網頁，是一個國外的健康食品外送公司的官網：Omnifood。</p>
+<p>網頁的架構是一頁式應用 (SPA, Single Page Application)，對於初學切版的人較為直接，而使用到的動畫也不多，不會有太多版面移動的狀況。另外，網頁還有做響應式設計 (RWD, Responsible Web Design)，在各種螢幕寬度上都有做規劃。</p>
+<p>他們的網頁很多人模仿過，也可以去參考看看 ~</p>
+<hr>
+<h1 id="切版目標與技術"><a href="#切版目標與技術" class="headerlink" title="切版目標與技術"></a>切版目標與技術</h1><p>由於挑戰限制是一週兩篇，鑒於時間壓力，要做 RWD 偏困難，因此我的目標是做出 PC 版的網頁，並且做到 80% 相似。也就是說，不需要做到像素級的完美，但美感、排版、視覺效果都要做到。至少看上去要是一個美美的網頁 ~</p>
+<p>使用到的技術並不多，比較特別的，這次切板我學到的 CSS 技術，可以分為 flexbox 排版、background-attachment 滾動背景、還有利用 scale 做出的聚焦效果。</p>
+<p>另外，為了寫起來方便、程式碼易讀性、以及一些瀏覽器相容性問題，我第一次使用了 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Sass">SCSS</a> 預處理器來寫 CSS code。沒有聽過 SCSS 的人也可以用 CSS 直接寫，不過就比較麻煩一些就是了。</p>
+<p>本篇的主旨在於簡介我的切版過程和想法，以及寫完後的心得整理，因此不會有太多的程式碼，請安心閱讀 XD</p>
+<hr>
+<h1 id="網頁架構分析"><a href="#網頁架構分析" class="headerlink" title="網頁架構分析"></a>網頁架構分析</h1><p>簡單看過網頁架構後，可以把網站切成幾個大的分區 (section)：</p>
+<ol>
+<li>超大橫幅封面 (banner) + 導覽列 (Navbar)</li>
+<li>服務內容與特色 (intro)</li>
+<li>照片展示畫廊 (gallery)</li>
+<li>使用說明 (howTo)</li>
+<li>服務地點 (locations)</li>
+<li>顧客評價 (reviews)</li>
+<li>購買方案 (purchase)</li>
+<li>聯絡方式 (contact)</li>
+<li>頁尾 (footer)</li>
+</ol>
+<p>網頁架構非常完整，在一個頁面內將服務內容、展示、方案、聯絡資訊等，全部完整且不失簡潔的呈現出來，是相當舒服的版面設計。同時，也是相當有挑戰性的設計 XDD</p>
+<p>過去我會將導覽列獨立出來，因為網站往往會讓導覽列始終懸浮在視窗最上方。但這個功能需要使用 javascript 的協助，這裡我們不使用 javascript，因此我把它放在第一個分區內。</p>
+<p>接下來，我就針對每個分區，說明我觀察到的網頁元素、所使用的技巧、以及注意事項。</p>
+<hr>
+<h1 id="超大橫幅封面-導覽列"><a href="#超大橫幅封面-導覽列" class="headerlink" title="超大橫幅封面 + 導覽列"></a>超大橫幅封面 + 導覽列</h1><p><img src="/blog/./images/assets/omnifood-mockup-1.webp"></p>
+<p>導覽列的部分相對簡單，logo 和導覽元素分別是 img 和 unordered list，將其用 float 推到左右兩側，並對 margin、padding 等等微調即可。主標題和按鈕也是類似的方式。</p>
+<p>橫幅背景的部分比較特別，在頁面滾動時，背景圖會留在原地，製造一種背景在遠處的立體感。使用的方法是透過一張被遮罩的背景照片，並設定 background-attachment 為 fixed。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: </span><br><span class="line">    <span class="built_in">linear-gradient</span>( <span class="built_in">rgba</span>( <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.7</span>), <span class="built_in">rgba</span>( <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.7</span>)),       </span><br><span class="line">    <span class="built_in">url</span>(<span class="string"> &lt;照片&gt;.jpg </span>);</span><br><span class="line"><span class="attribute">background-size</span>: cover;</span><br><span class="line"><span class="attribute">background-position</span>: center;</span><br><span class="line"><span class="attribute">background-attachment</span>: fixed;</span><br></pre></td></tr></table></figure>
+
+<p>加入 linear-gradient 的目的是讓照片多一層灰色遮罩，以凸顯頁面的主要文字。另外，background-image 無法將單一顏色視為照片，因此透過相同顏色的 linear-gradient 當作遮罩。</p>
+<p>編寫起來很簡單，卻為網頁美感大大加分。這也是我這次切版才學到的有趣設計！</p>
+<hr>
+<h1 id="服務內容與特色"><a href="#服務內容與特色" class="headerlink" title="服務內容與特色"></a>服務內容與特色</h1><p><img src="/blog/./images/assets/omnifood-mockup-2.webp"></p>
+<p>服務內容的頁面，可以簡單的分割成直的四行(綠)，與橫的四列(藍)。這樣根據內容而相對應修改長寬，並統一對齊的排版方式，非 CSS3 <a target="_blank" rel="noopener" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a> 莫屬啦！</p>
+<p>flexbox 可以根據盒子內的元素數量，作相對應的寬度調整，還能對齊元素的頭尾等常見對齊方式，是一個相當實用的技巧。想要輕鬆切版一定要學會他！</p>
+<p>圖中的小圖示 (icons) 是在 <a target="_blank" rel="noopener" href="https://fontawesome.com/">fontawesome</a> 中引入的，這是一個很常見的圖示資源庫，利用 icon 的 before 偽元素進行 javascript 的繪畫，要引用只要加入幾行程式碼，非常方便。如果網頁中大量使用，可以使用看看。但如果只有使用到極少量的話，建議還是直接以圖片檔會更快喔。</p>
+<hr>
+<h1 id="照片展示畫廊"><a href="#照片展示畫廊" class="headerlink" title="照片展示畫廊"></a>照片展示畫廊</h1><p><img src="/blog/./images/assets/omnifood-mockup-3.webp"></p>
+<p>畫廊的內容是讓我抓頭拍桌想最久的一個部分，別看它小小一個區塊，要真的想到解法還真的不容易 …… </p>
+<p>整個區塊的大致概念是：八張緊貼的照片，被黑色半透明遮罩罩住，滑鼠移動過去之後，會讓移除遮罩並讓照片略為縮小，製造一個聚焦的效果。聚焦和遮罩效果相對簡單，但想要緊密排列照片而不倒置換行，就有點學問了。</p>
+<p>一開始的想法是利用 flexbox 排版，只要排成 4x2 的格式就可以了。但 flexbox 在這裡不太好的地方是，緊密排列的照片，容易因為寬度稍微過大，就引發換行，造成內容過度跳動。</p>
+<p>最後我的寫法是透過 unordered list 水平排版 ( float: left ) 之後，再把照片放在固定比例的 div 元素中。這樣的作法可以保證，放在 div 中的照片，不會因為長寬變動而換行、超出格線。</p>
+<hr>
+<h1 id="使用說明"><a href="#使用說明" class="headerlink" title="使用說明"></a>使用說明</h1><p><img src="/blog/./images/assets/omnifood-mockup-4.webp"></p>
+<p>這裡一樣都是透過 flexbox 排版，並在手機照片和步驟說明兩欄，分別設定 40% 和 60% 寬度，讓手機不會過度置中。另外，手機照片可以直接透過 text-align 置右，相對於利用 margin 和 padding 更有效率，在不同畫面寬度上看也更合理。</p>
+<p>這裡比較沒有處理好的地方，是右方的步驟說明。因為步驟的圖示並非引入的 icon，而是透過 CSS 直接畫出，再利用 float: right 進行左置。這樣的動作會導致圖示不再受限於父元素的範圍，容易受到頁面寬度影響而大跑版。</p>
+<p>我也有找到幾個解決方案，要嘛透過 clearfix 的髒手段繞過去，或是透過大的 margin 避開。這兩種都是治標不治本的方式，而我使用的是後者。 (也許可以透過把圖示和文字，分開看作兩欄，直接避開這個問題？)</p>
+<hr>
+<h1 id="服務地點"><a href="#服務地點" class="headerlink" title="服務地點"></a>服務地點</h1><p><img src="/blog/./images/assets/omnifood-mockup-5.webp"></p>
+<p>服務地點和服務內容頁面排版幾乎一樣，只要對一些細部資料的 margin、padding 等格式稍作修正即可。</p>
+<hr>
+<h1 id="顧客評價"><a href="#顧客評價" class="headerlink" title="顧客評價"></a>顧客評價</h1><p><img src="/blog/./images/assets/omnifood-mockup-6.webp"></p>
+<p>排版也和上一區塊相同，但多了一些小東西。原本看到上方雙引號時，第一個想法就是直接一行 h2 元素，但理論上，它與下面的文字，其實是同一組的內容。</p>
+<p>分開成兩個元素來寫，相對較無意義：h2 元素不加 class 處理，容易被全域屬性干擾，為了一個雙引號加一個 class 又顯得多餘。因此，我選擇使用 CSS 的偽元素 ( ::before ) 來處理。</p>
+<p>最下方的人物頭像和文字，只是尋常的段落元素和照片，而很多人 (包括我) 常常搞不清楚的照片垂直置中，在這裡是透過 vertical-align: middle 完成的。照片和文字並排時，這個屬性在照片上才會起作用。</p>
+<hr>
+<h1 id="購買方案"><a href="#購買方案" class="headerlink" title="購買方案"></a>購買方案</h1><p><img src="/blog/./images/assets/omnifood-mockup-7.webp"></p>
+<p>排版同上。如同這裡的「資訊卡」類的模板很多，其實可以直接拿來用，但為了練習切版，我仍舊是全部手刻。另外，按鈕的部分也和前面設計相同，因此可以整理成一個元件。</p>
+<hr>
+<h1 id="聯絡方式"><a href="#聯絡方式" class="headerlink" title="聯絡方式"></a>聯絡方式</h1><p><img src="/blog/./images/assets/omnifood-mockup-8.webp"></p>
+<p>聯絡方式也是麻煩較多的一個區塊，透過全 flexbox 的排版方式很難做到固定比例，因此每一行的 label+input 依舊是 flexbox，但內容則是數個 unordered list，每個 list 中放入兩個 inline-block div，分別固定住 label 和 input 的寬度。</p>
+<p>最麻煩的是，下拉清單、勾選方格、一般的 input ，三者格式不同，需要分別修正到一樣的長寬，否則看起來真的會超級亂 ……</p>
+<hr>
+<h1 id="頁尾"><a href="#頁尾" class="headerlink" title="頁尾"></a>頁尾</h1><p><img src="/blog/./images/assets/omnifood-mockup-9.webp"></p>
+<p>頁尾內容不多，只有兩個寬度  inline-block div，分別置左和置右，調整 margin 即可。最後一行置中段落也很簡單。</p>
+<hr>
+<h1 id="成果展示"><a href="#成果展示" class="headerlink" title="成果展示"></a><a href="https://shanpig.github.io/mockup/">成果展示</a></h1><p>最後，讓我們看看我的作品！ 除了較為複雜的動畫和功能以外，大致的網頁外觀、視覺效果、排版，都和原版的相差無幾，只是少了 RWD 的部分，還是有點可惜就是了 (笑)</p>
+<p><a target="_blank" rel="noopener" href="http://www.omnifoodinc.com/">這是 Omnifood 的官網</a></p>
+<hr>
+<h1 id="心得整理"><a href="#心得整理" class="headerlink" title="心得整理"></a>心得整理</h1><p>雖然以前也切過一些版，但倒沒有明確給自己時間限制，因此做起來也悠哉悠哉，一旦有壓力在，不把許多小觀念弄清楚，果然還是會大大影響效率。這次學到的知識可以羅列出幾點：</p>
+<ol>
+<li>background-attachment:fixed可讓背景不隨滾輪捲動，做出靜態背景的效果</li>
+<li>各種 flexbox 的靈活運用</li>
+<li>SCSS 的第一次實作</li>
+<li>float 真的很討厭 (X</li>
+<li>gallery 特別實作方法，透過scale和background&#x2F;opacity做出滑鼠移動上去發亮與放大的聚焦效果</li>
+<li>對的工具用在錯的地方，就是錯的工具</li>
+</ol>
+<p>可以加強的地方：</p>
+<ol>
+<li>數字 icon 的設計不夠通用，字體大小會影響圖形</li>
+<li>class id 命名的系統化，讓樣式與功能分開</li>
+<li>使用說明的文字排版不夠穩定，容易受到頁寬影響</li>
+<li>CSS可以再簡潔一些，能夠共用的內容不只是存在單一 section。</li>
+<li>可以考慮使用 section、article 等功能性元素，增加使用閱讀輔助器的人的便利性</li>
+</ol>
+<hr>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><p>前端的世界就像大海，只有親自下水才知道水有多深。如果有任何問題或指教，歡迎來信跟我說 ~ 也可以和我一起討論喔！</p>
+<h1 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h1><ol>
+<li><a target="_blank" rel="noopener" href="http://www.omnifoodinc.com/">Omnifood</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-TW/docs/Web/CSS/background-attachment">background-attachment | MDN</a></li>
+<li><a target="_blank" rel="noopener" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A complete guide to flexbox | CSS tricks</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=Zz6eOVaaelI">SCSS in 20 minutes | Dev Ed - youtube</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://shanpig.github.io/blog/2022-06-12/front-end-30-omnifood-mockup/" data-id="cl4an7plp00005ctferyu9t6q" data-title="Omnifood 切版練習 | 前端三十之二" class="article-share-link">共有</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/blog/2022-06-11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">アーカイブ</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2020/08/">August 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最近の投稿</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/2022-06-12/front-end-30-omnifood-mockup/">Omnifood 切版練習 | 前端三十之二</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2022-06-11/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2020-08-18/front-end-30-VelocityJs/">Velocity.js 動畫引擎 | 前端三十之一</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2020-08-14/front-end-30-start/">前端三十，任務開始！</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 shanpig<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/blog/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/blog/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
